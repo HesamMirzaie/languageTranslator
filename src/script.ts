@@ -1,10 +1,10 @@
 import fs from "fs";
 import path from "path";
-
+// @ts-ignore
 import fa from "../../packages/logic/src/locales/fa.ts";
 
 // ---------------- CONFIG ----------------
-const RAPIDAPI_KEY = env.procces.RAPID_API_KEY;
+const RAPIDAPI_KEY = process.env.RAPID_API_KEY;
 // -----------------------------------------
 
 const persianSentenceRegex = /([\u0600-\u06FF][\u0600-\u06FF\s،.!؟]*)/g;
@@ -51,7 +51,7 @@ async function translateText(text: string): Promise<string> {
       {
         method: "POST",
         headers: {
-          "x-rapidapi-key": RAPIDAPI_KEY,
+          "x-rapidapi-key": RAPIDAPI_KEY as string,
           "x-rapidapi-host": "openl-translate.p.rapidapi.com",
           "Content-Type": "application/json",
           Accept: "application/json",
