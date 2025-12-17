@@ -4,7 +4,7 @@ import path from 'path';
 import fa from '../../packages/logic/src/locales/fa.ts';
 
 // ---------------- CONFIG ----------------
-const RAPIDAPI_KEY = 'd993f0e705mshacfec6ac3b977c2p1a3e8djsn9982d8b4e30b';
+const RAPIDAPI_KEY = env.procces.apiKey;
 // -----------------------------------------
 
 const persianSentenceRegex = /([\u0600-\u06FF][\u0600-\u06FF\s،.!؟]*)/g;
