@@ -1,6 +1,6 @@
 {
   "name": "automated-text-translator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small automated text translator (builds from src/script.ts)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
